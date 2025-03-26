@@ -30,15 +30,6 @@ python index_builder.py
 
   - **index/doc_id_map.json**: maps doc_id to file names
 
-**Sample Output**
-
-```
-총 441개의 문서를 처리했습니다.
-✅ 368,702개의 (token, docID) 쌍을 수집했습니다.
-✅ 고유 토큰 수: 11,199
-✅ 인덱스 저장 완료!
-✅ 시각화 완료 (상위 30개 토큰 표시됨)
-```
 
 ### 2. Search Engine
 Launches an interactive search interface that supports both Boolean and Vector Space models.
