@@ -1,0 +1,7 @@
+[
+    "Notscha.txt",
+    "The Boy and the Dragon.txt",
+    "The Giant with the Grey Feathers.txt",
+    "The History of Jack the Giant-Killer.txt",
+    "The Boy who Overcame the Giants.txt"
+]
