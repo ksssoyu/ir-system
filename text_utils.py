@@ -2,6 +2,8 @@ from nltk import pos_tag
 from nltk.corpus import stopwords, words, wordnet
 from nltk.tokenize import RegexpTokenizer
 from nltk.stem import WordNetLemmatizer
+import json
+
 
 # === nltk 리소스 다운로드 (최초 1회만 실행하면 됨) ===
 import nltk
@@ -65,3 +67,14 @@ def preprocess_text(text):
 
     # 실제 영어 단어만 필터링
     return [t for t in lemmatized_tokens if t in english_vocab]
+
+
+# ------------------------------------------------------------
+# dictionary.json, doc_id_map.json 파일 로드
+# ------------------------------------------------------------
+def load_index_and_docmap(dict_path="index/dictionary.json", doc_map_path="index/doc_id_map.json"):
+    with open(dict_path, "r", encoding="utf-8") as f:
+        index = json.load(f)
+    with open(doc_map_path, "r", encoding="utf-8") as f:
+        doc_id_map = json.load(f)
+    return index, doc_id_map
