@@ -53,3 +53,31 @@ python search_engine.py
   - dragon cave fire (vector mode)
 
 
+### 3. Evaluation
+Measures the performance of the **Boolean** IR system using **Precision, Recall, and F<sub>β</sub>-score**.
+
+```
+python evaluate.py
+```
+
+- Automatically loads a query and its manually constructed ground truth file (in ground_truth/ directory)
+
+- Processes the query using the Boolean model
+
+- **Calculates:**
+
+  - **Precision** – fraction of retrieved documents that are relevant
+
+  - **Recall** – fraction of relevant documents that are retrieved
+
+  - **F<sub>β</sub>-score** – harmonic mean that balances precision and recall, with β=0.5 to emphasize precision
+
+- Output includes:
+
+  - Query used
+
+  - Retrieved and relevant document counts
+
+  - Matched filenames
+
+  - Precision, Recall, and F<sub>β</sub>-score metrics
